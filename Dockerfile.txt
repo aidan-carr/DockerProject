@@ -1,0 +1,10 @@
+#FROM is the base image for which we will run our application
+FROM httpd:latest
+
+# Copy files and directories from the application
+
+COPY index.html C:\Users\ACA03\OneDrive - Sky\Documents\Docker
+COPY clouds.jpg C:\Users\ACA03\OneDrive - Sky\Documents\Docker
+
+# Tell Docker we are going to use this port
+EXPOSE 80
